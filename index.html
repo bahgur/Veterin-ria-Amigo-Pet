@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Clínica Amigo Pet</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header><h1>Clínica Veterinária Amigo Pet</h1></header>
+
+    <main>
+        <section>
+            <h2>Agendamento de Consulta</h2>
+            <img
+                src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400"
+                alt="Dois cachorros juntos">
+            <p>Cuide da saúde do seu melhor amigo com carinho.</p>
+        </section>
+
+        <form>
+            <label for="nome">Nome do Tutor:</label><br>
+                <input
+                    type="text" id="nome" name="nome" required
+                    minlength="3" aria-describedby="help-nome">
+                <small id="help-nome"> Digite o nome completo do responsável.</small><br>
+            <label for="email">E-mail para Contato:</label><br>
+
+            <input
+                type="email" id="email" name="email" required><br>
+                <fieldset>
+                    <legend>Espécie do Animal</legend>
+                        <input type="radio" id="cachorro" name="especie" value="Cachorro">
+                        <label for="cachorro">Cachorro</label><br><input
+                        type="radio" id="gato" name="especie" value="Gato">
+                    <label for="gato">Gato</label>
+                </fieldset><br>
+
+            <fieldset>
+                <legend>Serviços Desejados:</legend>
+                <input type="checkbox" id="vacinacao" name="servicos" value="Vacinação">
+                <label for="vacinacao">Vacinação</label><br>
+
+                <input type="checkbox" id="banho" name="servicos" value="Banho e Tosa">
+                <label for="banho">Banho e Tosa</label>
+
+            </fieldset><br>
+
+            <button
+                type="submit" aria-label="Confirmar agendamento da consulta veterinária">
+                Agendar Consulta
+            </button>
+        </form>
+    </main>
+</body>
+<footer><p>
+    <center>Clínica Amigo Pet - Atendimento Acessível 2026</center>
+    </p></footer>
+</html>
